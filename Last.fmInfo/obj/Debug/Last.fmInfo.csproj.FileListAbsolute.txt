@@ -21,3 +21,27 @@ C:\Users\victo_000\Dropbox\Faculdade\5º semestre\Linguagem de Programação Com
 C:\Users\victo_000\Dropbox\Faculdade\5º semestre\Linguagem de Programação Comercial\Trabalho G2\Last.fmInfo\Last.fmInfo\obj\Debug\Last.fmInfo.csprojResolveAssemblyReference.cache
 C:\Users\victo_000\Dropbox\Faculdade\5º semestre\Linguagem de Programação Comercial\Trabalho G2\Last.fmInfo\Last.fmInfo\obj\Debug\ArtistCharts.g.cs
 C:\Users\victo_000\Dropbox\Faculdade\5º semestre\Linguagem de Programação Comercial\Trabalho G2\Last.fmInfo\Last.fmInfo\obj\Debug\AllCharts.g.cs
+C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Bin\Debug\Assets\ApplicationIcon.png
+C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
+C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
+C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png
+C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png
+C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Bin\Debug\Assets\Tiles\IconicTileSmall.png
+C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Bin\Debug\Last.fmInfo.dll
+C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Bin\Debug\Last.fmInfo.pdb
+C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Bin\Debug\AppManifest.xaml
+C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Bin\Debug\Properties\WMAppManifest.xml
+C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Bin\Debug\Last.fmInfo_Debug_AnyCPU.xap
+C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\victo_000\Last.fmInfo\Last.fmInfo\obj\Debug\Last.fmInfo.csprojResolveAssemblyReference.cache
+C:\Users\victo_000\Last.fmInfo\Last.fmInfo\obj\Debug\App.g.cs
+C:\Users\victo_000\Last.fmInfo\Last.fmInfo\obj\Debug\AllCharts.g.cs
+C:\Users\victo_000\Last.fmInfo\Last.fmInfo\obj\Debug\ArtistCharts.g.cs
+C:\Users\victo_000\Last.fmInfo\Last.fmInfo\obj\Debug\MainPage.g.cs
+C:\Users\victo_000\Last.fmInfo\Last.fmInfo\obj\Debug\Last.fmInfo.g.resources
+C:\Users\victo_000\Last.fmInfo\Last.fmInfo\obj\Debug\Last.fmInfo.Resources.AppResources.resources
+C:\Users\victo_000\Last.fmInfo\Last.fmInfo\obj\Debug\Last.fmInfo.csproj.GenerateResource.Cache
+C:\Users\victo_000\Last.fmInfo\Last.fmInfo\obj\Debug\Last.fmInfo.dll
+C:\Users\victo_000\Last.fmInfo\Last.fmInfo\obj\Debug\Last.fmInfo.pdb
+C:\Users\victo_000\Last.fmInfo\Last.fmInfo\obj\Debug\XapCacheFile.xml
+C:\Users\victo_000\Last.fmInfo\Last.fmInfo\obj\Debug\AlbunsChart.g.cs

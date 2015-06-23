@@ -29,6 +29,7 @@
         <!--ContentPanel - place additional content here-->
         <StackPanel Grid.Row="1">
             <Button Name="btnArtistChart" Click="btnAC_click">Artists Chart</Button>
+            <Button Name="btnAlbunsChart" Click="btnALc_click" Content="Albuns Chart"/>
 
         </StackPanel>
 

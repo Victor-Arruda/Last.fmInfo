@@ -90,6 +90,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AlbunsChart.xaml.cs">
+      <DependentUpon>AlbunsChart.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AllCharts.xaml.cs">
       <DependentUpon>AllCharts.xaml</DependentUpon>
     </Compile>
@@ -99,6 +102,7 @@
     <Compile Include="ArtistCharts.xaml.cs">
       <DependentUpon>ArtistCharts.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Entity\AlbumChart.cs" />
     <Compile Include="Entity\ArtistChart.cs" />
     <Compile Include="Entity\User.cs" />
     <Compile Include="LocalizedStrings.cs" />
@@ -117,6 +121,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
+    <Page Include="AlbunsChart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="AllCharts.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

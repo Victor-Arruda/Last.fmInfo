@@ -16,7 +16,7 @@
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
         <!--Pivot Control-->
-        <phone:Pivot Title="INFO LAST.FM">
+        <phone:Pivot Title="INFO LAST.FM - ARTISTS">
             <!--Pivot item one-->
             <phone:PivotItem Header="last week">
                 <StackPanel Grid.Row="1">
@@ -101,7 +101,6 @@
                             </DataTemplate>
                         </ListBox.ItemTemplate>
                     </ListBox>
-
                 </StackPanel>
             </phone:PivotItem>
         </phone:Pivot>

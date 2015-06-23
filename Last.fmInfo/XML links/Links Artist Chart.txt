@@ -1,0 +1,5 @@
+http://ws.audioscrobbler.com/2.0/user/VictorArruda_/weeklyartistchart.xml
+http://ws.audioscrobbler.com/2.0/user/VictorArruda_/topartists.xml?period=3month
+http://ws.audioscrobbler.com/2.0/user/VictorArruda_/topartists.xml?period=6month
+http://ws.audioscrobbler.com/2.0/user/VictorArruda_/topartists.xml?period=12month
+http://ws.audioscrobbler.com/2.0/user/VictorArruda_/topartists.xml

@@ -34,5 +34,10 @@ namespace Last.fmInfo
         {
             NavigationService.Navigate(new Uri("/AlbunsChart.xaml", UriKind.Relative));
         }
+
+        private void btnTC_click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/TracksChart.xaml", UriKind.Relative));
+        }
     }
 }

@@ -45,3 +45,4 @@ C:\Users\victo_000\Last.fmInfo\Last.fmInfo\obj\Debug\Last.fmInfo.dll
 C:\Users\victo_000\Last.fmInfo\Last.fmInfo\obj\Debug\Last.fmInfo.pdb
 C:\Users\victo_000\Last.fmInfo\Last.fmInfo\obj\Debug\XapCacheFile.xml
 C:\Users\victo_000\Last.fmInfo\Last.fmInfo\obj\Debug\AlbunsChart.g.cs
+C:\Users\victo_000\Last.fmInfo\Last.fmInfo\obj\Debug\TracksChart.g.cs

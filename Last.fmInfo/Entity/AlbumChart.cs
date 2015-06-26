@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Last.fmInfo.Entity
 {
-    class AlbumChart
+    public class AlbumChart
     {
         public string Name { get; set; }
         public string PlayCount { get; set; }

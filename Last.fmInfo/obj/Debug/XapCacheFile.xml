@@ -1,6 +1,7 @@
-﻿<xapCache source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Bin\Debug\Last.fmInfo_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="24/06/2015 02:02:09">
-  <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\obj\Debug\Last.fmInfo.dll" archivePath="Last.fmInfo.dll" lastWriteTime="24/06/2015 02:02:08" />
+﻿<xapCache source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Bin\Debug\Last.fmInfo_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="26/06/2015 18:52:31">
+  <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\obj\Debug\Last.fmInfo.dll" archivePath="Last.fmInfo.dll" lastWriteTime="26/06/2015 18:52:30" />
   <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="23/06/2015 03:07:19" />
+  <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="23/06/2015 03:07:19" />
   <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="23/06/2015 03:07:19" />
   <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="23/06/2015 03:07:19" />
   <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="23/06/2015 03:07:19" />
@@ -9,15 +10,9 @@
   <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\XML links\Link Recent Tracks.txt" archivePath="XML links\Link Recent Tracks.txt" lastWriteTime="23/06/2015 03:07:19" />
   <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\XML links\Links Artist Chart.txt" archivePath="XML links\Links Artist Chart.txt" lastWriteTime="23/06/2015 03:07:19" />
   <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\XML links\Links Tracks Chart.txt" archivePath="XML links\Links Tracks Chart.txt" lastWriteTime="23/06/2015 03:07:19" />
-  <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="23/06/2015 03:25:17" />
-  <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Bin\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="23/06/2015 03:07:19" />
-  <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="23/06/2015 03:07:19" />
+  <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="26/06/2015 18:01:50" />
   <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="23/06/2015 03:07:19" />
-  <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="23/06/2015 03:07:19" />
-  <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="23/06/2015 03:07:19" />
-  <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Bin\Debug\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="23/06/2015 03:07:19" />
   <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v8.0\Libraries\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="01/01/2013 19:57:00" />
-  <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="23/06/2015 03:07:19" />
-  <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="23/06/2015 03:07:19" />
-  <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="23/06/2015 03:07:19" />
+  <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\LastfmLogo.png" archivePath="LastfmLogo.png" lastWriteTime="26/06/2015 16:18:26" />
+  <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="26/06/2015 18:01:50" />
 </xapCache>

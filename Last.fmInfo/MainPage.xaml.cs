@@ -15,12 +15,30 @@ namespace Last.fmInfo
 {
     public partial class MainPage : PhoneApplicationPage
     {
+        public User user { get; set; }
+        string username = "VictorArruda_";
+        private string apiKey = "099cb0a887d95cdcdccf153cb9293e4a";
         // Constructor
         public MainPage()
         {
             InitializeComponent();
 
-            
+            WebClient RecentTracks = new WebClient();
+
+            RecentTracks.DownloadStringCompleted += RecentTracks_DownloadStringCompleted;
+
+            RecentTracks.DownloadStringAsync(new Uri(@"http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user="+username+"&api_key="+apiKey));
+        }
+
+        void RecentTracks_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
+        {
+            var rssRecentTracks = from rss in XElement.Parse(e.Result).Descendants("track")
+                               select new TrackChart
+                               {
+                                   Name = rss.Element("name").Value + " - " + rss.Element("artist").Value,
+                                   Artist = rss.Element("artist").Value
+                               };
+            LstRecentTracks.ItemsSource = rssRecentTracks;
         }
 
         
@@ -39,5 +57,7 @@ namespace Last.fmInfo
         {
             NavigationService.Navigate(new Uri("/TracksChart.xaml", UriKind.Relative));
         }
+
+        
     }
 }

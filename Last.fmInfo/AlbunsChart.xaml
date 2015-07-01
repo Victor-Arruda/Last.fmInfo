@@ -26,7 +26,6 @@
                                 <StackPanel>
                                     <TextBlock TextWrapping="Wrap" Text="{Binding Name}" FontSize="38"/>
                                     <TextBlock Text="{Binding PlayCount}"/>
-                                    <TextBlock Text="Scrobbles"/>
                                     <TextBlock Text="{Binding Artist}"/>
                                 </StackPanel>
                             </DataTemplate>
@@ -44,7 +43,6 @@
                                 <StackPanel>
                                     <TextBlock TextWrapping="Wrap" Text="{Binding Name}" FontSize="38"/>
                                     <TextBlock Text="{Binding PlayCount}"/>
-                                    <TextBlock Text="Scrobbles"/>
                                     <TextBlock Text="{Binding Artist}"/>
                                 </StackPanel>
                             </DataTemplate>
@@ -62,7 +60,6 @@
                                 <StackPanel>
                                     <TextBlock TextWrapping="Wrap" Text="{Binding Name}" FontSize="38"/>
                                     <TextBlock Text="{Binding PlayCount}"/>
-                                    <TextBlock Text="Scrobbles"/>
                                     <TextBlock Text="{Binding Artist}"/>
                                 </StackPanel>
                             </DataTemplate>
@@ -80,7 +77,6 @@
                                 <StackPanel>
                                     <TextBlock TextWrapping="Wrap" Text="{Binding Name}" FontSize="38"/>
                                     <TextBlock Text="{Binding PlayCount}"/>
-                                    <TextBlock Text="Scrobbles"/>
                                     <TextBlock Text="{Binding Artist}"/>
                                 </StackPanel>
                             </DataTemplate>
@@ -98,7 +94,6 @@
                                 <StackPanel>
                                     <TextBlock TextWrapping="Wrap" Text="{Binding Name}" FontSize="38"/>
                                     <TextBlock Text="{Binding PlayCount}"/>
-                                    <TextBlock Text="Scrobbles"/>
                                     <TextBlock Text="{Binding Artist}"/>
                                 </StackPanel>
                             </DataTemplate>

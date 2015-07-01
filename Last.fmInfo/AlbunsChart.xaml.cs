@@ -14,7 +14,7 @@ namespace Last.fmInfo
 {
     public partial class AlbunsChart : PhoneApplicationPage
     {
-        string username = "usuariotestewpcassio";
+        string username = "VictorArruda_";
         private string apiKey = "099cb0a887d95cdcdccf153cb9293e4a";
         public AlbunsChart()
         {

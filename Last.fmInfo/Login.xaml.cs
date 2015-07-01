@@ -14,7 +14,7 @@ namespace Last.fmInfo
 {
     public partial class Login : PhoneApplicationPage
     {
-        List<AlbumChart> rssListo = new List<AlbumChart>();
+        public bool valid;
         public User usr;
         public Login()
         {
@@ -25,11 +25,13 @@ namespace Last.fmInfo
 
         private void Click_login(object sender, RoutedEventArgs e)
         {
-            /*
+            
             WebClient CheckUser = new WebClient();
 
             CheckUser.DownloadStringCompleted += CheckUser_DownloadStringCompleted;
-            if (rssListo.Count() == 0)
+            CheckUser.DownloadStringAsync(new Uri(@"http://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user="+ TxtNome.Text.ToString() +"&api_key=099cb0a887d95cdcdccf153cb9293e4a"));
+            /*
+            if (valid == false)
             {
                 MessageBox.Show("Invalid User!");
             }
@@ -37,27 +39,40 @@ namespace Last.fmInfo
             {
                 User u = new User() { UserName = TxtNome.Text };
                 User.Create(u);
-            }*/
-
+            }
+             */
+            if (valid)
+            {
+                User u = new User() { UserName = TxtNome.Text, CurrentUser = 1 };
+                User.Create(u);
+                Navigate("/MainPage.xaml");
+            }
+            /*
             User u = new User() { UserName = TxtNome.Text };
             User.Create(u);
+             */
         }
-        /*
+        
         void CheckUser_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
         {
-            var rssList = from rss in XElement.Parse(e.Result).Descendants("album")
-                          select new AlbumChart
-                          {
-                              Name = "Album: " + rss.Element("name").Value,
-                              PlayCount = rss.Element("playcount").Value + " Scrobbles",
-                              Artist = "Artista: " + rss.Element("artist").Element("name").Value
-                          };
-            foreach (AlbumChart a in rssList)
+            try
             {
-                rssListo.Add(a);
+                var rssList = from rss in XElement.Parse(e.Result).Descendants("album")
+                              select new AlbumChart
+                              {
+                                  Name = "Album: " + rss.Element("name").Value,
+                                  PlayCount = rss.Element("playcount").Value + " Scrobbles",
+                                  Artist = "Artista: " + rss.Element("artist").Element("name").Value
+                              };
+                valid = true;
+            }
+            catch
+            {
+                MessageBox.Show("Invalid User!");
+                valid = false;
             }
         }
-         */
+         
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
@@ -65,7 +80,7 @@ namespace Last.fmInfo
             if (User.Get().Count > 0)
             {
                 usr = User.Get()[0];
-                Navigate("MainPage.xaml");
+                Navigate("/MainPage.xaml");
             }
         }
         private void Navigate(string pPage)

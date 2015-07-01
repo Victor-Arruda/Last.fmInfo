@@ -58,6 +58,20 @@ namespace Last.fmInfo
             NavigationService.Navigate(new Uri("/TracksChart.xaml", UriKind.Relative));
         }
 
-        
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+
+            if (User.Get().Count <= 0)
+            {
+                Navigate("/Login.xaml");
+            }
+        }
+
+        private void Navigate(string pPage)
+        {
+            NavigationService.Navigate(new Uri(pPage, UriKind.Relative));
+        }
+
     }
 }

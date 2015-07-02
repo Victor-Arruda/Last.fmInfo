@@ -25,32 +25,21 @@ namespace Last.fmInfo
 
         private void Click_login(object sender, RoutedEventArgs e)
         {
+
             
             WebClient CheckUser = new WebClient();
-
+            teste.Text = "Buscando...";
             CheckUser.DownloadStringCompleted += CheckUser_DownloadStringCompleted;
             CheckUser.DownloadStringAsync(new Uri(@"http://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user="+ TxtNome.Text.ToString() +"&api_key=099cb0a887d95cdcdccf153cb9293e4a"));
-            /*
-            if (valid == false)
-            {
-                MessageBox.Show("Invalid User!");
-            }
-            else
-            {
-                User u = new User() { UserName = TxtNome.Text };
-                User.Create(u);
-            }
-             */
-            if (valid)
+            
+            if (valid == true)
             {
                 User u = new User() { UserName = TxtNome.Text, CurrentUser = 1 };
                 User.Create(u);
+                teste.Text = "";
                 Navigate("/MainPage.xaml");
             }
-            /*
-            User u = new User() { UserName = TxtNome.Text };
-            User.Create(u);
-             */
+            
         }
         
         void CheckUser_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
@@ -68,21 +57,22 @@ namespace Last.fmInfo
             }
             catch
             {
-                MessageBox.Show("Invalid User!");
+                teste.Text = "";
+                MessageBox.Show("Invalid User or No Internet Connection!");
                 valid = false;
             }
         }
-         
+        /*
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
 
             if (User.Get().Count > 0)
             {
-                usr = User.Get()[0];
                 Navigate("/MainPage.xaml");
             }
         }
+         */
         private void Navigate(string pPage)
         {
             NavigationService.Navigate(new Uri(pPage, UriKind.Relative));

@@ -35,6 +35,12 @@
             
             <Button Content="Login" Name="Btn_login" Click="Click_login" MaxWidth="200"/>
         </StackPanel>
+        
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock Text="" Name="teste" HorizontalAlignment="Center"/>
+        </StackPanel>
+        
+        
     </Grid>
 
 </phone:PhoneApplicationPage>

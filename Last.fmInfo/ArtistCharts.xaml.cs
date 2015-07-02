@@ -14,11 +14,13 @@ namespace Last.fmInfo
 {
     public partial class ArtistCharts : PhoneApplicationPage
     {
-        string username = "VictorArruda_";
+        string username = User.GetCurrentUser()[0].UserName;
         private string apiKey = "099cb0a887d95cdcdccf153cb9293e4a";
         public ArtistCharts()
         {
             InitializeComponent();
+
+            charge.Text = "Loading...";
 
             WebClient ChartWeek = new WebClient();
 
@@ -54,57 +56,93 @@ namespace Last.fmInfo
 
         void ChartTopArtists_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
         {
-            var rssTopArtists = from rss in XElement.Parse(e.Result).Descendants("artist")
-                                  select new ArtistChart
-                                  {
-                                      Name = rss.Element("name").Value,
-                                      PlayCount = rss.Element("playcount").Value
-                                  };
-            LstTopArtists.ItemsSource = rssTopArtists;
+            try
+            {
+                var rssTopArtists = from rss in XElement.Parse(e.Result).Descendants("artist")
+                                    select new ArtistChart
+                                    {
+                                        Name = rss.Element("name").Value,
+                                        PlayCount = rss.Element("playcount").Value + " Scrobbles"
+                                    };
+                LstTopArtists.ItemsSource = rssTopArtists;
+            }
+            catch
+            {
+                charge.Text = "";
+            }
         }
 
         void ChartTwelveMonths_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
         {
-            var rssTwelveMonths = from rss in XElement.Parse(e.Result).Descendants("artist")
-                                 select new ArtistChart
-                                 {
-                                     Name = rss.Element("name").Value,
-                                     PlayCount = rss.Element("playcount").Value
-                                 };
-            LstTwelveMonths.ItemsSource = rssTwelveMonths;
+            try
+            {
+                var rssTwelveMonths = from rss in XElement.Parse(e.Result).Descendants("artist")
+                                      select new ArtistChart
+                                      {
+                                          Name = rss.Element("name").Value,
+                                          PlayCount = rss.Element("playcount").Value + " Scrobbles"
+                                      };
+                LstTwelveMonths.ItemsSource = rssTwelveMonths;
+            }
+            catch
+            {
+                charge.Text = "";
+            }
         }
 
         void ChartSixMonths_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
         {
-            var rssSixMonths = from rss in XElement.Parse(e.Result).Descendants("artist")
-                                 select new ArtistChart
-                                 {
-                                     Name = rss.Element("name").Value,
-                                     PlayCount = rss.Element("playcount").Value
-                                 };
-            LstSixMonths.ItemsSource = rssSixMonths;
+            try
+            {
+                var rssSixMonths = from rss in XElement.Parse(e.Result).Descendants("artist")
+                                   select new ArtistChart
+                                   {
+                                       Name = rss.Element("name").Value,
+                                       PlayCount = rss.Element("playcount").Value + " Scrobbles"
+                                   };
+                LstSixMonths.ItemsSource = rssSixMonths;
+            }
+            catch
+            {
+                charge.Text = "";
+            }
         }
 
         void CharThreeMonths_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
         {
-            var rssThreeMonths = from rss in XElement.Parse(e.Result).Descendants("artist")
-                          select new ArtistChart
-                          {
-                              Name = rss.Element("name").Value,
-                              PlayCount = rss.Element("playcount").Value
-                          };
-            LstThreeMonths.ItemsSource = rssThreeMonths;
+            try
+            {
+                var rssThreeMonths = from rss in XElement.Parse(e.Result).Descendants("artist")
+                                     select new ArtistChart
+                                     {
+                                         Name = rss.Element("name").Value,
+                                         PlayCount = rss.Element("playcount").Value + " Scrobbles"
+                                     };
+                LstThreeMonths.ItemsSource = rssThreeMonths;
+            }
+            catch
+            {
+                charge.Text = "";
+            }
         }
 
         void ChartWeek_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
         {
-            var rssWeek = from rss in XElement.Parse(e.Result).Descendants("artist")
-                          select new ArtistChart
-                          {
-                              Name = rss.Element("name").Value,
-                              PlayCount = rss.Element("playcount").Value
-                          };
-            LstWeek.ItemsSource = rssWeek;
+            try
+            {
+                var rssWeek = from rss in XElement.Parse(e.Result).Descendants("artist")
+                              select new ArtistChart
+                              {
+                                  Name = rss.Element("name").Value,
+                                  PlayCount = rss.Element("playcount").Value + " Scrobbles"
+                              };
+                LstWeek.ItemsSource = rssWeek;
+            }
+            catch
+            {
+                MessageBox.Show("No Internet!");
+                charge.Text = "";
+            }
         }
     }
 }

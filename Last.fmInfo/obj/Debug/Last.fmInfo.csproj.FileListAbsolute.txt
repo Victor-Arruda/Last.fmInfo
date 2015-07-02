@@ -35,7 +35,6 @@ C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Bin\Debug\Last.fmInfo_Debug_AnyCPU.xa
 C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Bin\Debug\Microsoft.Phone.Controls.dll
 C:\Users\victo_000\Last.fmInfo\Last.fmInfo\obj\Debug\App.g.cs
 C:\Users\victo_000\Last.fmInfo\Last.fmInfo\obj\Debug\AlbunsChart.g.cs
-C:\Users\victo_000\Last.fmInfo\Last.fmInfo\obj\Debug\AllCharts.g.cs
 C:\Users\victo_000\Last.fmInfo\Last.fmInfo\obj\Debug\ArtistCharts.g.cs
 C:\Users\victo_000\Last.fmInfo\Last.fmInfo\obj\Debug\Login.g.cs
 C:\Users\victo_000\Last.fmInfo\Last.fmInfo\obj\Debug\MainPage.g.cs

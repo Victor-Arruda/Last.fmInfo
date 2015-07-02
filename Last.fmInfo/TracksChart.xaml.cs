@@ -14,11 +14,13 @@ namespace Last.fmInfo
 {
     public partial class TracksChart : PhoneApplicationPage
     {
-        string username = "VictorArruda_";
+        string username = User.GetCurrentUser()[0].UserName;
         private string apiKey = "099cb0a887d95cdcdccf153cb9293e4a";
         public TracksChart()
         {
             InitializeComponent();
+
+            charge.Text = "Loading...";
 
             WebClient ChartWeek = new WebClient();
             ChartWeek.DownloadStringCompleted += ChartWeek_DownloadStringCompleted;
@@ -43,64 +45,100 @@ namespace Last.fmInfo
 
         void ChartTopTracks_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
         {
-            var rssTopTracks = from rss in XElement.Parse(e.Result).Descendants("track")
-                               select new TrackChart
-                               {
-                                   Name = "Song: " + rss.Element("name").Value,
-                                   Playcount = rss.Element("playcount").Value + " Scrobbles",
-                                   Artist = "Artist: " + rss.Element("artist").Element("name").Value
-                               };
-            LstTopTracks.ItemsSource = rssTopTracks;
+            try
+            {
+                var rssTopTracks = from rss in XElement.Parse(e.Result).Descendants("track")
+                                   select new TrackChart
+                                   {
+                                       Name = "Song: " + rss.Element("name").Value,
+                                       Playcount = rss.Element("playcount").Value + " Scrobbles",
+                                       Artist = "Artist: " + rss.Element("artist").Element("name").Value
+                                   };
+                LstTopTracks.ItemsSource = rssTopTracks;
+            }
+            catch
+            {
+                charge.Text = "";
+            }
         }
 
         void ChartTwelveMonths_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
         {
-            var rssTwelveMonths = from rss in XElement.Parse(e.Result).Descendants("track")
-                               select new TrackChart
-                               {
-                                   Name = "Song: " + rss.Element("name").Value,
-                                   Playcount = rss.Element("playcount").Value + " Scrobbles",
-                                   Artist = "Artist: " + rss.Element("artist").Element("name").Value
-                               };
-            LstTwelveMonth.ItemsSource = rssTwelveMonths;
+            try
+            {
+                var rssTwelveMonths = from rss in XElement.Parse(e.Result).Descendants("track")
+                                      select new TrackChart
+                                      {
+                                          Name = "Song: " + rss.Element("name").Value,
+                                          Playcount = rss.Element("playcount").Value + " Scrobbles",
+                                          Artist = "Artist: " + rss.Element("artist").Element("name").Value
+                                      };
+                LstTwelveMonth.ItemsSource = rssTwelveMonths;
+            }
+            catch
+            {
+                charge.Text = "";
+            }
         }
 
         void ChartSixMonth_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
         {
-            var rssSixMonths = from rss in XElement.Parse(e.Result).Descendants("track")
-                                  select new TrackChart
-                                  {
-                                      Name = "Song: " + rss.Element("name").Value,
-                                      Playcount = rss.Element("playcount").Value + " Scrobbles",
-                                      Artist = "Artist: " + rss.Element("artist").Element("name").Value
-                                  };
-            LstSixMonth.ItemsSource = rssSixMonths;
+            try
+            {
+                var rssSixMonths = from rss in XElement.Parse(e.Result).Descendants("track")
+                                   select new TrackChart
+                                   {
+                                       Name = "Song: " + rss.Element("name").Value,
+                                       Playcount = rss.Element("playcount").Value + " Scrobbles",
+                                       Artist = "Artist: " + rss.Element("artist").Element("name").Value
+                                   };
+                LstSixMonth.ItemsSource = rssSixMonths;
+            }
+            catch
+            {
+                charge.Text = "";
+            }
         }
 
         void ChartThreeMonth_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
         {
-            var rssThreeMonths = from rss in XElement.Parse(e.Result).Descendants("track")
-                                  select new TrackChart
-                                  {
-                                      Name = "Song: " + rss.Element("name").Value,
-                                      Playcount = rss.Element("playcount").Value + " Scrobbles",
-                                      Artist = "Artist: " + rss.Element("artist").Element("name").Value
-                                  };
-            LstThreeMonth.ItemsSource = rssThreeMonths;
+            try
+            {
+                var rssThreeMonths = from rss in XElement.Parse(e.Result).Descendants("track")
+                                     select new TrackChart
+                                     {
+                                         Name = "Song: " + rss.Element("name").Value,
+                                         Playcount = rss.Element("playcount").Value + " Scrobbles",
+                                         Artist = "Artist: " + rss.Element("artist").Element("name").Value
+                                     };
+                LstThreeMonth.ItemsSource = rssThreeMonths;
+            }
+            catch
+            {
+                charge.Text = "";
+            }
         }
 
         void ChartWeek_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
         {
-            var rssWeek = from rss in XElement.Parse(e.Result).Descendants("track")
-                                  select new TrackChart
-                                  {
-                                      Name = "Song: " + rss.Element("name").Value,
-                                      Playcount = rss.Element("playcount").Value + " Scrobbles",
-                                      Artist = "Artist: " + rss.Element("artist").Element("name").Value
-                                  };
+            try
+            {
+                var rssWeek = from rss in XElement.Parse(e.Result).Descendants("track")
+                              select new TrackChart
+                              {
+                                  Name = "Song: " + rss.Element("name").Value,
+                                  Playcount = rss.Element("playcount").Value + " Scrobbles",
+                                  Artist = "Artist: " + rss.Element("artist").Element("name").Value
+                              };
 
-            
-            LstWeek.ItemsSource = rssWeek;
+                charge.Text = "";
+                LstWeek.ItemsSource = rssWeek;
+            }
+            catch
+            {
+                MessageBox.Show("No Internet!");
+                charge.Text = "";
+            }
         }
     }
 }

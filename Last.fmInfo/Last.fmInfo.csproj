@@ -93,9 +93,6 @@
     <Compile Include="AlbunsChart.xaml.cs">
       <DependentUpon>AlbunsChart.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AllCharts.xaml.cs">
-      <DependentUpon>AllCharts.xaml</DependentUpon>
-    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
@@ -130,10 +127,6 @@
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
     <Page Include="AlbunsChart.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="AllCharts.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

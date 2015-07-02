@@ -20,13 +20,14 @@
             <!--Pivot item one-->
             <phone:PivotItem Header="last week">
                 <StackPanel Grid.Row="1">
+                    <TextBlock Text="" Name="charge" HorizontalAlignment="Center"/>
                     <ListBox Name="LstWeek" Height="606">
                         <ListBox.ItemTemplate>
                             <DataTemplate>
                                 <StackPanel>
                                     <TextBlock TextWrapping="Wrap" Text="{Binding Name}" FontSize="38"/>
-                                    <TextBlock Text="{Binding Playcount}"/>
-                                    <TextBlock Text="{Binding Artist}"/>
+                                    <TextBlock Text="{Binding Playcount}" FontSize="28"/>
+                                    <TextBlock Text="{Binding Artist}" FontSize="28"/>
                                 </StackPanel>
                             </DataTemplate>
                         </ListBox.ItemTemplate>
@@ -43,8 +44,8 @@
                             <DataTemplate>
                                 <StackPanel>
                                     <TextBlock TextWrapping="Wrap" Text="{Binding Name}" FontSize="38"/>
-                                    <TextBlock Text="{Binding Playcount}"/>
-                                    <TextBlock Text="{Binding Artist}"/>
+                                    <TextBlock Text="{Binding Playcount}" FontSize="28"/>
+                                    <TextBlock Text="{Binding Artist}" FontSize="28"/>
                                 </StackPanel>
                             </DataTemplate>
                         </ListBox.ItemTemplate>
@@ -61,8 +62,8 @@
                             <DataTemplate>
                                 <StackPanel>
                                     <TextBlock TextWrapping="Wrap" Text="{Binding Name}" FontSize="38"/>
-                                    <TextBlock Text="{Binding Playcount}"/>
-                                    <TextBlock Text="{Binding Artist}"/>
+                                    <TextBlock Text="{Binding Playcount}" FontSize="28"/>
+                                    <TextBlock Text="{Binding Artist}" FontSize="28"/>
                                 </StackPanel>
                             </DataTemplate>
                         </ListBox.ItemTemplate>
@@ -79,8 +80,8 @@
                             <DataTemplate>
                                 <StackPanel>
                                     <TextBlock TextWrapping="Wrap" Text="{Binding Name}" FontSize="38"/>
-                                    <TextBlock Text="{Binding Playcount}"/>
-                                    <TextBlock Text="{Binding Artist}"/>
+                                    <TextBlock Text="{Binding Playcount}" FontSize="28"/>
+                                    <TextBlock Text="{Binding Artist}" FontSize="28"/>
                                 </StackPanel>
                             </DataTemplate>
                         </ListBox.ItemTemplate>
@@ -97,8 +98,8 @@
                             <DataTemplate>
                                 <StackPanel>
                                     <TextBlock TextWrapping="Wrap" Text="{Binding Name}" FontSize="38"/>
-                                    <TextBlock Text="{Binding Playcount}"/>
-                                    <TextBlock Text="{Binding Artist}"/>
+                                    <TextBlock Text="{Binding Playcount}" FontSize="28"/>
+                                    <TextBlock Text="{Binding Artist}" FontSize="28"/>
                                 </StackPanel>
                             </DataTemplate>
                         </ListBox.ItemTemplate>

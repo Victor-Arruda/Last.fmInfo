@@ -16,29 +16,44 @@ namespace Last.fmInfo
     public partial class MainPage : PhoneApplicationPage
     {
         public User user { get; set; }
-        string username = "VictorArruda_";
+        string username;
+
+        
         private string apiKey = "099cb0a887d95cdcdccf153cb9293e4a";
         // Constructor
         public MainPage()
         {
             InitializeComponent();
+            if (User.Get().Count > 0)
+            {
+                username = User.GetCurrentUser()[0].UserName;
 
-            WebClient RecentTracks = new WebClient();
+                WebClient RecentTracks = new WebClient();
 
-            RecentTracks.DownloadStringCompleted += RecentTracks_DownloadStringCompleted;
+                RecentTracks.DownloadStringCompleted += RecentTracks_DownloadStringCompleted;
 
-            RecentTracks.DownloadStringAsync(new Uri(@"http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user="+username+"&api_key="+apiKey));
+                RecentTracks.DownloadStringAsync(new Uri(@"http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=" + username + "&api_key=" + apiKey));
+            }
+            
+            
         }
 
         void RecentTracks_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
         {
-            var rssRecentTracks = from rss in XElement.Parse(e.Result).Descendants("track")
-                               select new TrackChart
-                               {
-                                   Name = rss.Element("name").Value + " - " + rss.Element("artist").Value,
-                                   Artist = rss.Element("artist").Value
-                               };
-            LstRecentTracks.ItemsSource = rssRecentTracks;
+            try
+            {
+                var rssRecentTracks = from rss in XElement.Parse(e.Result).Descendants("track")
+                                      select new TrackChart
+                                      {
+                                          Name = rss.Element("name").Value + " - " + rss.Element("artist").Value,
+                                          Artist = rss.Element("artist").Value
+                                      };
+                LstRecentTracks.ItemsSource = rssRecentTracks;
+            }
+            catch
+            {
+                MessageBox.Show("No Internet!");
+            }
         }
 
         
@@ -64,6 +79,7 @@ namespace Last.fmInfo
 
             if (User.Get().Count <= 0)
             {
+                
                 Navigate("/Login.xaml");
             }
         }
@@ -73,5 +89,12 @@ namespace Last.fmInfo
             NavigationService.Navigate(new Uri(pPage, UriKind.Relative));
         }
 
+        private void PhoneApplicationPage_BackKeyPress(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            while (NavigationService.CanGoBack)
+            {
+                NavigationService.RemoveBackEntry();
+            }
+        }
     }
 }

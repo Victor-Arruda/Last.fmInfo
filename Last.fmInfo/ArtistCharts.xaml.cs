@@ -136,6 +136,7 @@ namespace Last.fmInfo
                                   Name = rss.Element("name").Value,
                                   PlayCount = rss.Element("playcount").Value + " Scrobbles"
                               };
+                charge.Text = "";
                 LstWeek.ItemsSource = rssWeek;
             }
             catch

@@ -15,7 +15,6 @@ namespace Last.fmInfo
     public partial class Login : PhoneApplicationPage
     {
         public bool valid;
-        public User usr;
         public Login()
         {
             InitializeComponent();
@@ -57,9 +56,9 @@ namespace Last.fmInfo
             }
             catch
             {
+                valid = false;
                 teste.Text = "";
                 MessageBox.Show("Invalid User or No Internet Connection!");
-                valid = false;
             }
         }
         /*

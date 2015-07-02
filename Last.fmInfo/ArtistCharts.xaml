@@ -20,9 +20,8 @@
             <!--Pivot item one-->
             <phone:PivotItem Header="last week">
                 <StackPanel Grid.Row="1">
-                    <ListBox Name="LstWeek" Height="606">
-                        <TextBlock Text="" Name="charge" HorizontalAlignment="Center"/>
-                        <ListBox.ItemTemplate>
+                    <TextBlock Text="" Name="charge" HorizontalAlignment="Center"/>
+                    <ListBox Name="LstWeek" Height="606">                        <ListBox.ItemTemplate>
                             <DataTemplate>
                                 <StackPanel>
                                     <TextBlock TextWrapping="Wrap" Text="{Binding Name}" FontSize="38"/>

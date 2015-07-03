@@ -16,7 +16,7 @@
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
         <!--Pivot Control-->
-        <phone:Pivot Title="MY APPLICATION">
+        <phone:Pivot Title="LAST.FM INFO">
             <!--Pivot item one-->
             <phone:PivotItem Header="last week">
                 <StackPanel Grid.Row="1">

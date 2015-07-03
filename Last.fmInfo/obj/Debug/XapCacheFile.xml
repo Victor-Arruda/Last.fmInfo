@@ -1,11 +1,14 @@
-﻿<xapCache source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Bin\Debug\Last.fmInfo_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="03/07/2015 03:40:51">
-  <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\obj\Debug\Last.fmInfo.dll" archivePath="Last.fmInfo.dll" lastWriteTime="03/07/2015 03:40:50" />
+﻿<xapCache source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Bin\Debug\Last.fmInfo_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="03/07/2015 18:47:10">
+  <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\obj\Debug\Last.fmInfo.dll" archivePath="Last.fmInfo.dll" lastWriteTime="03/07/2015 18:47:09" />
   <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="03/07/2015 01:19:12" />
   <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="03/07/2015 01:19:12" />
   <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="03/07/2015 01:19:12" />
   <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="03/07/2015 01:19:12" />
   <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="03/07/2015 01:19:12" />
   <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="03/07/2015 01:19:12" />
+  <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Icons\add.png" archivePath="Icons\add.png" lastWriteTime="03/07/2015 15:50:48" />
+  <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Icons\cancel.png" archivePath="Icons\cancel.png" lastWriteTime="03/07/2015 15:50:48" />
+  <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\Icons\feature.search.png" archivePath="Icons\feature.search.png" lastWriteTime="03/07/2015 15:50:48" />
   <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\TextFile1.txt" archivePath="TextFile1.txt" lastWriteTime="03/07/2015 01:19:12" />
   <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\XML links\Link Recent Tracks.txt" archivePath="XML links\Link Recent Tracks.txt" lastWriteTime="03/07/2015 01:19:12" />
   <file source="C:\Users\victo_000\Last.fmInfo\Last.fmInfo\XML links\Links Artist Chart.txt" archivePath="XML links\Links Artist Chart.txt" lastWriteTime="03/07/2015 01:19:12" />

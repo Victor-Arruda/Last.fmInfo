@@ -17,6 +17,10 @@ namespace Last.fmInfo.Entity
         public string UserName { get; set; }
         [Column(CanBeNull = false)]
         public int CurrentUser { get; set; }
+        public string PlayCount { get; set; }
+        public string RealName { get; set; }
+        public string Country { get; set; }
+        public string Age { get; set; }
 
         private static DB GetDataBase()
         {
@@ -47,6 +51,22 @@ namespace Last.fmInfo.Entity
             var query = from users in db.Users where users.CurrentUser == 1 select users;
             List<User> usuarios = new List<User>(query.AsEnumerable());
             return usuarios;
+        }
+
+        public static void UpdateCurrentUser(User pUser)
+        {
+            DB db = GetDataBase();
+            var discipline = from users in db.Users where users.CurrentUser == 1select users;
+            List<User> usrs = new List<User>(discipline.AsQueryable());
+
+            foreach (User user in usrs)
+            {
+                user.CurrentUser = 0;
+            }
+
+            User usr = (from u in db.Users where u.UserName == pUser.UserName select u).First();
+            usr.CurrentUser = 1;
+            db.SubmitChanges();
         }
     }
 }

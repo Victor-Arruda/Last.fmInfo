@@ -64,7 +64,7 @@ namespace Last.fmInfo
                 MessageBox.Show("Invalid User or No Internet Connection!");
             }
         }
-        
+        /*
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
@@ -74,7 +74,7 @@ namespace Last.fmInfo
                 Navigate("/MainPage.xaml");
             }
         }
-         
+         */
         private void Navigate(string pPage)
         {
             NavigationService.Navigate(new Uri(pPage, UriKind.Relative));

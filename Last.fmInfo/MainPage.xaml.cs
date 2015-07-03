@@ -17,8 +17,6 @@ namespace Last.fmInfo
     {
         public User user { get; set; }
         string username;
-
-        
         private string apiKey = "099cb0a887d95cdcdccf153cb9293e4a";
         // Constructor
         public MainPage()
@@ -87,6 +85,21 @@ namespace Last.fmInfo
         private void Navigate(string pPage)
         {
             NavigationService.Navigate(new Uri(pPage, UriKind.Relative));
+        }
+
+        private void appBarProfile_Click(object sender, EventArgs e)
+        {
+            Navigate("/Profile.xaml");
+        }
+
+        private void appBarNewUser_Click(object sender, EventArgs e)
+        {
+            Navigate("/Login.xaml");
+        }
+
+        private void appBarSignOut_Click(object sender, EventArgs e)
+        {
+
         }
         
         

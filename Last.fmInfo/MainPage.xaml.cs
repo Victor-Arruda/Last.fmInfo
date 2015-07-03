@@ -88,13 +88,8 @@ namespace Last.fmInfo
         {
             NavigationService.Navigate(new Uri(pPage, UriKind.Relative));
         }
-
-        private void PhoneApplicationPage_BackKeyPress(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-            while (NavigationService.CanGoBack)
-            {
-                NavigationService.RemoveBackEntry();
-            }
-        }
+        
+        
+         
     }
 }

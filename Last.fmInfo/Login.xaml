@@ -33,7 +33,7 @@
           
             <TextBox Name="TxtNome"/>
             
-            <Button Content="Login" Name="Btn_login" Click="Click_login" MaxWidth="200"/>
+            <Button Content="Find User" Name="Btn_login" Click="Click_login" MaxWidth="200"/>
         </StackPanel>
         
         <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">

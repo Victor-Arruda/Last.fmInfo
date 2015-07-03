@@ -28,7 +28,8 @@
 
         <!--ContentPanel - place additional content here-->
         <StackPanel Grid.Row="1">
-            <ListBox Name="LstUser" Height="606">
+            <Button Name="changeusr" Content="Change user" Click="click_change"/>
+            <ListBox Name="LstUser" Height="606" SelectionChanged="onSelectionChange">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel>
@@ -39,7 +40,7 @@
             </ListBox>
         </StackPanel>
         <StackPanel Grid.Row="1">
-            <Button Name="changeusr" Content="Change user" Click="click_change"/>
+            
         </StackPanel>
     </Grid>
 

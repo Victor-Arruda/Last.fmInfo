@@ -14,7 +14,6 @@ namespace Last.fmInfo
     public partial class ChangeUser : PhoneApplicationPage
     {
         User user;
-        User usr;
         public ChangeUser()
         {
             InitializeComponent();
@@ -29,14 +28,14 @@ namespace Last.fmInfo
         private void onSelectionChange(object sender, SelectionChangedEventArgs e)
         {
             user = (sender as ListBox).SelectedItem as User;
-            usr = user;
         }
 
         private void click_change(object sender, RoutedEventArgs e)
         {
-            if (usr != null)
+            if (user != null)
             {
-                User.UpdateCurrentUser(usr);
+                User.UpdateCurrentUser(user);
+                NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
             }
             else
             {
